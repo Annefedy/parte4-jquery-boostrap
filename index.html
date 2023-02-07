@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="function.js"></script>
+  <title>Tabela</title>
+  
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+        <div class=" col-md-12 text-center">
+          <img src="img/logoIbrap.png" class="rounded mx-auto d-block" alt="logo Ibrap">
+        </div>              
+    </div>
+</div>
+  
+  <div class="container">
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <h2>Tabela de cadastro</h2>
+    </blockquote>
+  </figure>
+    <input type="hidden" id="teste" value="N" />
+    <p id="testeTexto"></p>
+    <p>
+      <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Adicionar</button>
+    </p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Cor</th>
+          <th>Renavam</th>
+          <th>Placa</th>
+          <th>Alterar</th>
+          <th>Excluir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Carro</td>
+          <td>Gol</td>
+          <td>Volkswagen</td>
+          <td>Branco</td>
+          <td>123456789</td>
+          <td>ABC-1234</td>
+          <td><button class="btn btn-info btn-xs alterar" type="button">Alterar</button>
+          </td>
+          <td><button class="btn btn-danger btn-xs excluir" type="button">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Carro</td>
+          <td>Uno</td>
+          <td>Fiat</td>
+          <td>Preto</td>
+          <td>987654321</td>
+          <td>XYZ-4321</td>
+          <td><button class="btn btn-info btn-xs alterar" type="button">Alterar</button>
+          </td>
+          <td><button class="btn btn-danger btn-xs excluir" type="button">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Carro</td>
+          <td>Fiesta</td>
+          <td>Ford</td>
+          <td>Vermelho</td>
+          <td>159753258</td>
+          <td>QWE-3214</td>
+          <td><button class="btn btn-info btn-xs alterar" type="button">Alterar</button>
+          </td>
+          <td><button class="btn btn-danger btn-xs excluir" type="button">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Carro</td>
+          <td>Celta</td>
+          <td>Chevrolet</td>
+          <td>Azul</td>
+          <td>753951486</td>
+          <td>MNB-2109</td>
+          <td><button class="btn btn-info btn-xs alterar" type="button">Alterar</button>
+          </td>
+          <td><button class="btn btn-danger btn-xs excluir" type="button">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Carro</td>
+          <td>Astra</td>
+          <td>GM</td>
+          <td>Cinza</td>
+          <td>963258147</td>
+          <td>ZYX-9876</td>
+          <td><button class="btn btn-info btn-xs alterar" type="button">Alterar</button>
+          </td>
+          <td><button class="btn btn-danger btn-xs excluir" type="button">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Adicionar</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="tipo">Tipo:</label>
+              <input type="text" class="form-control" id="tipo" name="tipo">
+            </div>
+            <div class="form-group">
+              <label for="modelo">Modelo:</label>
+              <input type="text" class="form-control" id="modelo" name="modelo">
+            </div>
+            <div class="form-group">
+              <label for="marca">Marca:</label>
+              <input type="text" class="form-control" id="marca" name="marca">
+            </div>
+            <div class="form-group">
+              <label for="cor">Cor:</label>
+              <input type="text" class="form-control" id="cor" name="cor">
+            </div>
+            <div class="form-group">
+              <label for="renavam">Renavam:</label>
+              <input type="text" class="form-control" id="renavam" name="renavam">
+            </div>
+            <div class="form-group">
+              <label for="placa">Placa:</label>
+              <input type="text" class="form-control" id="placa" name="placa">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success" id="salvar">Salvar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

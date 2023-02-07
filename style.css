@@ -1,0 +1,37 @@
+.pisca {
+  -webkit-animation-name: pisca;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: pisca;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  color: red;
+}
+
+@-webkit-keyframes pisca {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pisca {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
